@@ -1,0 +1,54 @@
+.lzfc-fidelity-card {
+    border: 2px dashed #000000;
+    padding: 20px;
+    text-align: center;
+    width: 300px; /* Adatta la larghezza della carta */
+}
+
+.lzfc-user-name {
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.lzfc-timbri-grid {
+    display: grid; /* Utilizziamo grid layout */
+    grid-template-columns: repeat(5, 1fr); /* 5 colonne */
+    gap: 10px; /* Spazio tra i quadrati */
+    margin-bottom: 10px;
+}
+
+.lzfc-timbro {
+    width: auto;  /* Larghezza automatica */
+    height: auto; /* Altezza automatica */
+    border: 1px solid #000; /* Bordo nero sottile */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem; /* Dimensione del numero */
+    position: relative; /* Posizionamento relativo per il logo del timbro */
+}
+
+.lzfc-timbro-accumulato { 
+    background-color: rgba(255, 255, 255, 0.7); /* Sfondo semi-trasparente */
+}
+
+.lzfc-timbro-accumulato .lzfc-numero-timbro{
+    display: none; /* Nasconde il numero quando viene aggiunto il timbro */
+}
+
+.lzfc-timbro img {
+    max-width: 100%;
+    max-height: 100%;
+    position: absolute; /* Posizionamento assoluto per sovrapporre il numero */
+    top: 0;
+    left: 0;
+}
+
+.lzfc-omaggio {
+    font-weight: bold;
+}
+
+.lzfc-scadenza {
+    font-size: 0.8em;
+}
